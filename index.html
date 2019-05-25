@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BsB VIP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="author" content="BsBVIP" />
+		<meta name="keywords" content="Acompanhantes de Brasília, Acompanhantes DF, Acompanhantes BSB, Garotas de Programa Brasília, VIP Brasília, BSB VIP" />
+		<meta name="description" content="Acompanhantes de Brasília, Acompanhantes DF, Acompanhantes BSB, BsB VIP" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<script type='text/javascript'>
+	  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1xaQNYforeE6OazNMAXi1jvSwTHquAwApA0RqpnYHXAg/edit?usp=sharing';
+
+	  function init() {
+	    Tabletop.init( { key: publicSpreadsheetUrl,
+	                     callback: showInfo,
+	                     simpleSheet: true } )
+	  }
+
+	  function showInfo(data, tabletop) {
+			for (var i=1;i<data.length;i++) {
+			  document.getElementById("main").innerHTML += '<article class="thumb"><a href="fotos/index.html?a='+i+'" class="image" style="display:flex;"><img src="'+[data[i].Capa]+'"" alt="" style="width:100%;"/></a><h2>'+[data[i].Nome]+'</h2></article>';
+			 }
+	    console.log(data);
+	  }
+
+	  window.addEventListener('DOMContentLoaded', init)
+	</script>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html"><img src="fotos/images/logo.png"/><strong>Acompanhantes</strong></a></h1>
+						<nav>
+							<ul>
+								<li><a href="viagem.html">Disponíveis para viagem</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+					</div>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+		  <script src='assets/js/tabletop.js'></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
